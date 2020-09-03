@@ -99,7 +99,7 @@ nav div {
 
 .hero {
     width: 80%;
-    background-image: url("/images/hero.jpg");
+    background-image: url("../images/hero.jpg");
     background-size: cover;
     background-position: center 70%;
     background-repeat: no-repeat;
