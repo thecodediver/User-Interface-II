@@ -197,6 +197,12 @@ footer .contact-footer {
     box-shadow: 1px 1px 8px black;
     color: white;
     margin-bottom: 10%;
+    transition: all .3s;
+}
+
+.contact-footer:hover {
+    color: black;
+    opacity: .7;
 }
 
 .footer-outer {
