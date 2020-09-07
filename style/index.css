@@ -65,6 +65,15 @@ html {
 body {
     font-size: 1.6rem;
 }
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 
 nav {
     display: flex;
@@ -73,11 +82,12 @@ nav {
 
 nav h1 {
     font-size: 3.5rem;
-    margin: 1% 5%;
+    margin: 1% 0% 1% 5%;
 }
 
 nav div {
     margin: 1% 5%;
+    display: flex;
 }
 
 .nav-links {
@@ -85,8 +95,8 @@ nav div {
     width: 120px;
     background: linear-gradient(to bottom right, rgb(238, 236, 236), rgb(146, 145, 145));
     text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 2% 0;
+    margin: .5%;
     font-size: 2rem;
     box-shadow: 1px 1px 8px black;
     transition: all .3s;
@@ -227,4 +237,28 @@ footer .contact-footer {
     box-shadow: 1px 1px 3px black;
     top: 2px;
     left: 2px;
+}
+
+/* ===================
+STYLING FOR TABLET SIZE SCREEN (MW - 800px)
+=================== */
+@media( max-width: 800px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    body {
+        font-size: 1.8rem;
+    }
+}
+
+/* ===================
+STYLING FOR MOBILE SIZE SCREEN (MW - 500px)
+=================== */
+@media( max-width: 500px) {
+    
+
+
+
+
 }
